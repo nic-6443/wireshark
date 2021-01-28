@@ -1,6 +1,9 @@
 name: Build MacOS
 
-on: [push]
+on:
+  push:
+  watch:
+    types: [ started ]
 
 jobs:
   macos:

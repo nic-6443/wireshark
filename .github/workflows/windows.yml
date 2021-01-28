@@ -1,6 +1,9 @@
 name: Build Windows
 
-on: [push]
+on:
+  push:
+  watch:
+    types: [ started ]
 
 jobs:
   windows:
