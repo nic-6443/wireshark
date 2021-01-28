@@ -711,6 +711,7 @@ proto_reg_handoff_proxy(void)
 {
     heur_dissector_add("tcp", dissect_proxy_heur, "proxy", "proxy_tcp", proto_proxy, HEURISTIC_ENABLE);
     heur_dissector_add("udp", dissect_proxy_heur, "proxy", "proxy_udp", proto_proxy, HEURISTIC_ENABLE);
+    heur_dissector_add("mqtt", dissect_proxy_heur, "proxy", "proxy_mqtt", proto_proxy, HEURISTIC_ENABLE);
 }
 
 /*
